@@ -1,7 +1,10 @@
-name: deploy
+name: Deploy to GitHub Pages
+on:
+  push:
+    branches:
+      - main
 jobs:
-  my-job:
-    name: build
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -10,8 +13,8 @@ jobs:
       # Встановлення залежностей
       - run: bun install
 
-      # Запуск Vite для розробки
-      - run: bunx --bun vite
-
       # Збірка проекту
-      - run: bunx --bun vite build
+      - run: bunx vite build
+
+      # Деплой на GitHub Pages
+      - run: bunx gh-pages -d dist

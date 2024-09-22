@@ -7,6 +7,7 @@
     "dev": "bunx --bun vite",
     "build": "bunx --bun vite build",
     "preview": "bunx --bun vite preview",
+    "deploy": "bunx gh-pages -d dist",
     "format": "biome format --write",
     "lint": "biome lint --write --unsafe",
     "check": "biome check --write"
