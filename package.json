@@ -3,13 +3,14 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://livegp.github.io/vite-project/",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "format": "biome format --write",
+    "dev": "bunx --bun vite",
+    "build": "bunx --bun vite build",
+    "preview": "bunx --bun vite preview",
+    "format": "biome format --write --unsafe",
     "lint": "biome lint --write --unsafe",
-    "check": "biome check --write"
+    "check": "biome check --write --unsafe"
   },
   "dependencies": {
     "react": "^18.3.1",
