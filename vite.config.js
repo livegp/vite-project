@@ -3,14 +3,13 @@ import react from '@vitejs/plugin-react-swc';
 import { defineConfig } from 'vite';
 import biomePlugin from 'vite-plugin-biome';
 import ImagePresetsPlugin, { widthPreset } from 'vite-plugin-image-presets';
-// import ViteMinifyPlugin from 'vite-plugin-minify';
 import { reactClickToComponent } from 'vite-plugin-react-click-to-component';
+
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     react(),
     reactClickToComponent(),
-    // ViteMinifyPlugin({}),
     VitePluginSvgSpritemap('./src/icons/*.svg'),
     ImagePresetsPlugin({
       thumbnail: widthPreset({
