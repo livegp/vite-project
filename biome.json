@@ -7,7 +7,7 @@
     "defaultBranch": "master"
   },
   "files": {
-    "ignore": ["dist"],
+    "ignore": ["dist", "node_modules"],
     "include": [],
     "ignoreUnknown": true
   },
