@@ -8,7 +8,10 @@ import { reactClickToComponent } from 'vite-plugin-react-click-to-component';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    react(),
+    react({
+      jsxImportSource: '@emotion/react',
+      plugins: [['@swc/plugin-emotion', {}]],
+    }),
     reactClickToComponent(),
     VitePluginSvgSpritemap('./src/icons/*.svg'),
     ImagePresetsPlugin({
@@ -28,5 +31,5 @@ export default defineConfig({
       applyFixes: true,
     }),
   ],
-  base: '/vite-project/',
+  base: '/vite-project',
 });
