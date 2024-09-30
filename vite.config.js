@@ -10,7 +10,6 @@ import { reactClickToComponent } from 'vite-plugin-react-click-to-component';
 export default defineConfig({
   base: '/vite-project',
   esbuild: {
-    bundle: true,
     minify: true,
     treeShaking: true,
     drop: ['console', 'debugger'],
