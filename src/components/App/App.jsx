@@ -1,6 +1,7 @@
 import { Global } from '@emotion/react';
 import { useState } from 'react';
 import viteLogo from '/vite.svg';
+
 import reactLogo from '../../assets/react.svg';
 import {
   AnimatedLogo,
@@ -16,6 +17,10 @@ import {
 export function App() {
   const [count, setCount] = useState(0);
 
+  const handleClick = () => {
+    setCount(count => count + 1);
+  };
+
   return (
     <>
       <Global styles={GlobalStyles} />
@@ -29,7 +34,7 @@ export function App() {
       </div>
       <Title>Vite + React + Bun</Title>
       <Card>
-        <Button type='button' onClick={() => setCount(count => count + 1)}>
+        <Button type='button' onClick={handleClick}>
           count is {count}
         </Button>
         <p>

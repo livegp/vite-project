@@ -3,7 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "files": ["dist"],
   "homepage": "https://livegp.github.io/vite-project/",
   "scripts": {
     "dev": "bunx --bun vite",
@@ -25,12 +24,13 @@
     "@spiriit/vite-plugin-svg-spritemap": "^2.2.4",
     "@types/react": "^18.3.10",
     "@types/react-dom": "^18.3.0",
-    "@vitejs/plugin-react-swc": "^3.7.0",
+    "@vitejs/plugin-react-swc": "^3.7.1",
     "globals": "^15.9.0",
+    "lefthook": "^1.7.18",
+    "unplugin-turbo-console": "^1.10.4",
     "vite": "^5.4.8",
-    "lefthook": "^1.7.17",
+    "vite-plugin-biome": "^1.0.12",
     "vite-plugin-image-presets": "^0.3.4",
-    "vite-plugin-react-click-to-component": "^3.0.0",
-    "vite-plugin-biome": "^1.0.12"
+    "vite-plugin-react-click-to-component": "^3.0.0"
   }
 }
