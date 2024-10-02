@@ -17,8 +17,7 @@
     "@emotion/styled": "^11.13.0",
     "@swc/plugin-emotion": "^4.0.2",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "vite-plugin-favicons-inject": "^2.2.0"
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.3",
@@ -31,7 +30,9 @@
     "unplugin-turbo-console": "^1.10.4",
     "vite": "^5.4.8",
     "vite-plugin-biome": "^1.0.12",
+    "vite-plugin-favicons-inject": "^2.2.0",
     "vite-plugin-image-presets": "^0.3.4",
+    "vite-plugin-minify": "^2.0.0",
     "vite-plugin-react-click-to-component": "^3.0.0"
   }
 }
