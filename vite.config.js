@@ -28,47 +28,42 @@ export default defineConfig(({ mode }) => {
       TurboConsole({}),
       reactClickToComponent(),
       vitePluginFaviconsInject('./src/assets/favicons/logo.svg', {
-        config: {},
-        pluginConfig: {
-          failGraciously: false,
+        path: '/',
+        appName: 'vite-project',
+        appShortName: 'vite-project',
+        appDescription: 'the starting template of the project',
+        developerName: 'Pishta Oleksandr',
+        // biome-ignore lint/style/useNamingConvention: <explanation>
+        developerURL: 'https://livegp.github.io',
+        cacheBustingQueryParam: null,
+        dir: 'auto',
+        lang: 'en-US',
+        background: '#fff',
+        // biome-ignore lint/style/useNamingConvention: <explanation>
+        theme_color: '#fff',
+        appleStatusBarStyle: 'black-translucent',
+        display: 'standalone',
+        orientation: 'any',
+        scope: '/',
+        // biome-ignore lint/style/useNamingConvention: <explanation>
+        start_url: '/?homescreen=1',
+        preferRelatedApplications: false,
+        relatedApplications: undefined,
+        version: '1.0',
+        // biome-ignore lint/style/useNamingConvention: <explanation>
+        pixel_art: false,
+        loadManifestWithCredentials: false,
+        manifestMaskable: true,
+        icons: {
+          android: true,
+          appleIcon: true,
+          appleStartup: true,
+          favicons: true,
+          windows: true,
+          yandex: false,
         },
+        failGraciously: false,
       }),
-      // vitePluginFaviconsInject('./src/assets/favicons/logo.svg', {
-      //   // path: '/',
-      //   // appName: 'vite-project',
-      //   // appShortName: 'vite-project',
-      //   // appDescription: 'starting template',
-      //   // developerName: 'Pishta Oleksandr',
-      //   // // biome-ignore lint/style/useNamingConvention: <explanation>
-      //   // developerURL: 'https://livegp.github.io',
-      //   // cacheBustingQueryParam: null,
-      //   // dir: 'auto',
-      //   // lang: 'en-US',
-      //   // background: '#fff',
-      //   // // biome-ignore lint/style/useNamingConvention: <explanation>
-      //   // theme_color: '#fff',
-      //   // appleStatusBarStyle: 'black-translucent',
-      //   // display: 'standalone',
-      //   // orientation: 'any',
-      //   // scope: '/',
-      //   // // biome-ignore lint/style/useNamingConvention: <explanation>
-      //   // start_url: '/?homescreen=1',
-      //   // preferRelatedApplications: false,
-      //   // relatedApplications: undefined,
-      //   // version: '1.0',
-      //   // // biome-ignore lint/style/useNamingConvention: <explanation>
-      //   // pixel_art: false,
-      //   // loadManifestWithCredentials: false,
-      //   // manifestMaskable: false,
-      //   icons: {
-      //     android: true,
-      //     appleIcon: true,
-      //     appleStartup: true,
-      //     favicons: true,
-      //     windows: true,
-      //     yandex: false,
-      //   },
-      // }),
       // ImagePresetsPlugin({
       //   thumbnail: widthPreset({
       //     class: 'img thumb',
