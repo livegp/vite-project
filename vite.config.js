@@ -20,6 +20,7 @@ export default defineConfig(({ mode }) => {
     },
     build: {
       outDir: mode === 'production' ? 'dist' : 'build',
+      sourcemap: true,
     },
     plugins: [
       react({
