@@ -2,6 +2,7 @@ import { Global } from '@emotion/react';
 import { useState } from 'react';
 import reactLogo from '/src/assets/react.svg';
 import viteLogo from '/vite.svg';
+import { Head } from '../Head.jsx';
 import {
   AnimatedLogo,
   Button,
@@ -23,6 +24,7 @@ export function App() {
   return (
     <>
       <Global styles={GlobalStyles} />
+      <Head />
       <div>
         <StyledLink href='https://vitejs.dev' target='_blank' rel='noreferrer'>
           <Logo src={viteLogo} alt='Vite logo' />
