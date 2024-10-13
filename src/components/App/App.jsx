@@ -1,7 +1,7 @@
 import { Global } from '@emotion/react';
 import { useState } from 'react';
-import reactLogo from '/src/assets/react.svg';
-import viteLogo from '/vite.svg';
+import reactLogo from '/src/assets/icons/react.svg';
+import viteLogo from '/src/assets/icons/vite.svg';
 import { Head } from '../Head.jsx';
 import {
   AnimatedLogo,

@@ -1,3 +1,4 @@
+import VitePluginSvgSpritemap from '@spiriit/vite-plugin-svg-spritemap';
 import react from '@vitejs/plugin-react-swc';
 import TurboConsole from 'unplugin-turbo-console/vite';
 import { defineConfig, loadEnv } from 'vite';
@@ -37,6 +38,7 @@ export default defineConfig(({ mode }) => {
         applyFixes: true,
         failOnError: false,
       }),
+      VitePluginSvgSpritemap('./src/assets/icons/*.svg'),
       vitePluginFaviconsInject('./src/assets/favicons/logo.svg', {
         path: '/',
         appName: 'vite-project',
