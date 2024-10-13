@@ -90,9 +90,9 @@ export default defineConfig(({ mode }) => {
         twitter: {
           card: 'summary_large_image',
           site: '@live_gp',
-          siteId: 'live_gp',
+          siteId: '118488504',
           creator: '@live_gp',
-          creatorId: 'live_gp',
+          creatorId: '118488504',
           description: 'Twitter description for live_gp.',
           title: 'Twitter Title for live_gp',
           image: 'https://livegp.github.io/vite-project/twitter-image.png',
@@ -103,7 +103,7 @@ export default defineConfig(({ mode }) => {
           playerStream: 'https://livegp.github.io/vite-project/player-stream',
         },
         facebook: {
-          appId: 'oleksandr.pishta',
+          appId: '100000506117116',
         },
       }),
       // ImagePresetsPlugin({
