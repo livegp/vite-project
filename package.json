@@ -1,9 +1,23 @@
 {
   "name": "vite-project",
-  "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://livegp.github.io/vite-project/",
+  "homepage": "https://livegp.github.io/vite-project",
+  "private": true,
+  "description": "",
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/livegp/vite-project/issues"
+  },
+  "author": {
+    "name": "Oleksandr Pishta",
+    "email": "live.gp@gmail.com",
+    "url": "https://github.com/livegp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/livegp/vite-project"
+  },
   "scripts": {
     "dev": "bunx --bun vite",
     "build": "bunx --bun vite build",

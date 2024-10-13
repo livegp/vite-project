@@ -79,11 +79,10 @@ export default defineConfig(({ mode }) => {
           locale: 'en_US',
           image: {
             url: 'https://livegp.github.io/vite-project/vite.png',
-            secureUrl: 'https://livegp.github.io/vite-project/vite.png',
             type: 'image/png',
             width: 800,
             height: 600,
-            alt: 'Avatar Image',
+            alt: 'Vite Image',
           },
         },
         twitter: {
@@ -95,11 +94,7 @@ export default defineConfig(({ mode }) => {
           description: 'Twitter description for live_gp.',
           title: 'Twitter Title for live_gp',
           image: 'https://livegp.github.io/vite-project/vite.png',
-          imageAlt: 'Twitter Image Alt Text',
-          player: 'https://livegp.github.io/vite-project/player',
-          playerWidth: 1200,
-          playerHeight: 600,
-          playerStream: 'https://livegp.github.io/vite-project/player-stream',
+          imageAlt: 'Vite Image',
         },
         facebook: {
           appId: '100000506117116',
