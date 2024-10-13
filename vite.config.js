@@ -91,20 +91,20 @@ export default defineConfig(({ mode }) => {
             alt: 'Vite Image',
           },
         },
-        // twitter: {
-        //   card: 'summary_large_image',
-        //   site: '@live_gp',
-        //   siteId: '118488504',
-        //   creator: '@live_gp',
-        //   creatorId: '118488504',
-        //   description: 'Oleksandr Pishta, Full Stack Developer',
-        //   title: 'vite-project',
-        //   image: 'https://livegp.github.io/vite-project/vite.png',
-        //   imageAlt: 'Vite Image',
-        // },
-        // facebook: {
-        //   appId: '100000506117116',
-        // },
+        twitter: {
+          card: 'summary_large_image',
+          site: '@live_gp',
+          siteId: '118488504',
+          creator: '@live_gp',
+          creatorId: '118488504',
+          description: 'Oleksandr Pishta, Full Stack Developer',
+          title: 'vite-project',
+          image: 'https://livegp.github.io/vite-project/vite.png',
+          imageAlt: 'Vite Image',
+        },
+        facebook: {
+          appId: '100000506117116',
+        },
       }),
       // ImagePresetsPlugin({
       //   thumbnail: widthPreset({
