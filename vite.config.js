@@ -75,8 +75,7 @@ export default defineConfig(({ mode }) => {
           type: 'image.webp',
           image: {
             url: 'https://livegp.github.io/vite-project/vite.webp',
-            secureUrl:
-              'https://livegp.github.io/vite-project/vite.webp',
+            secureUrl: 'https://livegp.github.io/vite-project/vite.webp',
             type: 'image/webp',
             width: 800,
             height: 600,
