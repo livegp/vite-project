@@ -75,8 +75,8 @@ export default defineConfig(({ mode }) => {
           type: 'image.webp',
           image: {
             url: 'https://livegp.github.io/vite-project/vite.webp',
-            // secureUrl:
-            //   'https://livegp.github.io/vite-project/avatar-secure.webp',
+            secureUrl:
+              'https://livegp.github.io/vite-project/vite.webp',
             type: 'image/webp',
             width: 800,
             height: 600,
@@ -95,7 +95,7 @@ export default defineConfig(({ mode }) => {
           creatorId: '118488504',
           description: 'Twitter description for live_gp.',
           title: 'Twitter Title for live_gp',
-          image: 'https://livegp.github.io/vite-project/twitter-image.png',
+          image: 'https://livegp.github.io/vite-project/vite.webp',
           imageAlt: 'Twitter Image Alt Text',
           player: 'https://livegp.github.io/vite-project/player',
           playerWidth: 1200,
