@@ -31,12 +31,18 @@ export default defineConfig(({ mode }) => {
       ViteMinifyPlugin({}),
       TurboConsole({}),
       reactClickToComponent(),
+      biomePlugin({
+        mode: 'check',
+        files: '.',
+        applyFixes: true,
+        failOnError: false,
+      }),
       vitePluginFaviconsInject('./src/assets/favicons/logo.svg', {
         path: '/',
         appName: 'vite-project',
         appShortName: 'vite-project',
         appDescription: 'the starting template of the project',
-        developerName: 'Pishta Oleksandr',
+        developerName: 'Oleksandr Pishta',
         // biome-ignore lint/style/useNamingConvention: <explanation>
         developerURL: 'https://livegp.github.io',
         cacheBustingQueryParam: null,
@@ -73,32 +79,32 @@ export default defineConfig(({ mode }) => {
           url: 'https://livegp.github.io/vite-project/',
           siteName: 'vite-project',
           title: 'vite-project',
-          description: 'livegp, Front-end Developer.',
+          description: 'Oleksandr Pishta, Full Stack Developer',
           type: 'image.png',
           determiner: 'auto',
           locale: 'en_US',
           image: {
             url: 'https://livegp.github.io/vite-project/vite.png',
             type: 'image/png',
-            width: 800,
-            height: 600,
+            width: 900,
+            height: 440,
             alt: 'Vite Image',
           },
         },
-        twitter: {
-          card: 'summary_large_image',
-          site: '@live_gp',
-          siteId: '118488504',
-          creator: '@live_gp',
-          creatorId: '118488504',
-          description: 'Twitter description for live_gp.',
-          title: 'Twitter Title for live_gp',
-          image: 'https://livegp.github.io/vite-project/vite.png',
-          imageAlt: 'Vite Image',
-        },
-        facebook: {
-          appId: '100000506117116',
-        },
+        // twitter: {
+        //   card: 'summary_large_image',
+        //   site: '@live_gp',
+        //   siteId: '118488504',
+        //   creator: '@live_gp',
+        //   creatorId: '118488504',
+        //   description: 'Oleksandr Pishta, Full Stack Developer',
+        //   title: 'vite-project',
+        //   image: 'https://livegp.github.io/vite-project/vite.png',
+        //   imageAlt: 'Vite Image',
+        // },
+        // facebook: {
+        //   appId: '100000506117116',
+        // },
       }),
       // ImagePresetsPlugin({
       //   thumbnail: widthPreset({
@@ -111,12 +117,6 @@ export default defineConfig(({ mode }) => {
       //     },
       //   }),
       // }),
-      biomePlugin({
-        mode: 'check',
-        files: '.',
-        applyFixes: true,
-        failOnError: false,
-      }),
     ],
   };
 });
