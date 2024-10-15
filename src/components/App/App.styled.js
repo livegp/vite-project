@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 
 export const Logo = styled.img`
   height: 6em;
+  width: 6em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
