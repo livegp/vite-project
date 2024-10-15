@@ -85,7 +85,7 @@ export const Text = styled.p`
 
 export const GlobalStyles = css`
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Roboto, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   color-scheme: light dark;

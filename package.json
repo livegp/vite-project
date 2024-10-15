@@ -35,20 +35,21 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.3",
-    "@spiriit/vite-plugin-svg-spritemap": "^2.3.1",
-    "@swc/plugin-emotion": "^4.0.2",
+    "@swc/plugin-emotion": "^4.0.3",
     "@types/react": "^18.3.11",
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react-swc": "^3.7.1",
     "globals": "^15.11.0",
     "lefthook": "^1.7.18",
     "unplugin-turbo-console": "^1.10.4",
-    "vite": "^5.4.8",
+    "vite": "^5.4.9",
     "vite-plugin-biome": "^1.0.12",
     "vite-plugin-favicons-inject": "^2.2.0",
     "vite-plugin-image-presets": "^0.3.4",
     "vite-plugin-minify": "^2.0.0",
-    "vite-plugin-open-graph": "^2.0.5",
-    "vite-plugin-react-click-to-component": "^3.0.0"
+    "vite-plugin-open-graph": "^2.0.6",
+    "vite-plugin-react-click-to-component": "^3.0.0",
+    "vite-plugin-svg-icons": "^2.0.1",
+    "vite-plugin-webfont-dl": "^3.9.5"
   }
 }
