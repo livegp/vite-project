@@ -2,6 +2,7 @@ import { Global } from '@emotion/react';
 import { useState } from 'react';
 import reactLogo from '/src/assets/icons/react.svg';
 import viteLogo from '/src/assets/icons/vite.svg';
+import ImageVite from '/src/assets/img/vite.png?w=400&quality=75&format=webp';
 import { Head } from '../Head.jsx';
 import {
   AnimatedLogo,
@@ -43,6 +44,7 @@ export function App() {
         </p>
       </Card>
       <Text>Click on the Vite and React logos to learn more</Text>
+      <img src={ImageVite} alt='Фото' />
     </>
   );
 }
