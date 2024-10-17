@@ -53,7 +53,12 @@ export default defineConfig(({ mode }) => {
           proxy: false,
         },
       ),
-      imagetools({}),
+      imagetools({
+        cache: {
+          enabled: true,
+          dir: './node_modules/.cache/imagetools',
+        },
+      }),
       vitePluginFaviconsInject('./src/assets/favicons/logo.svg', {
         path: '/',
         appName: 'vite-project',
@@ -123,17 +128,6 @@ export default defineConfig(({ mode }) => {
           appId: '100000506117116',
         },
       }),
-      // ImagePresetsPlugin({
-      //   thumbnail: widthPreset({
-      //     class: 'img thumb',
-      //     loading: 'lazy',
-      //     widths: [48, 96],
-      //     formats: {
-      //       webp: { quality: 50 },
-      //       jpg: { quality: 70 },
-      //     },
-      //   }),
-      // }),
     ],
   };
 });
