@@ -2,8 +2,9 @@ import { Global } from '@emotion/react';
 import { useState } from 'react';
 import reactLogo from '/src/assets/icons/react.svg';
 import viteLogo from '/src/assets/icons/vite.svg';
-import ImageVite from '/src/assets/img/vite.png?w=400&quality=75&format=webp';
+import { img, sources } from '/src/assets/img/vite.png?as=picture&w=400';
 import { Head } from '../Head.jsx';
+import { Image } from '../Image.jsx';
 import {
   AnimatedLogo,
   Button,
@@ -44,7 +45,7 @@ export function App() {
         </p>
       </Card>
       <Text>Click on the Vite and React logos to learn more</Text>
-      <img src={ImageVite} alt='Фото' />
+      <Image img={img} sources={sources} />
     </>
   );
 }

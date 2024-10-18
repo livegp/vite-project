@@ -34,13 +34,13 @@
     "react-helmet-async": "^2.0.5"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.9.3",
+    "@biomejs/biome": "^1.9.4",
     "@swc/plugin-emotion": "^4.0.3",
     "@types/react": "^18.3.11",
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react-swc": "^3.7.1",
     "globals": "^15.11.0",
-    "lefthook": "^1.7.21",
+    "lefthook": "^1.7.22",
     "unplugin-turbo-console": "^1.10.4",
     "vite": "^5.4.9",
     "vite-imagetools": "^7.0.4",
@@ -50,6 +50,7 @@
     "vite-plugin-open-graph": "^2.0.6",
     "vite-plugin-react-click-to-component": "^3.0.0",
     "vite-plugin-svg-icons": "^2.0.1",
+    "vite-plugin-svg-spritemap": "^1.0.1",
     "vite-plugin-webfont-dl": "^3.9.5"
   }
 }

@@ -7,6 +7,7 @@ import vitePluginFaviconsInject from 'vite-plugin-favicons-inject';
 import { ViteMinifyPlugin } from 'vite-plugin-minify';
 import ogPlugin from 'vite-plugin-open-graph';
 import { reactClickToComponent } from 'vite-plugin-react-click-to-component';
+import { svgSpritemap } from 'vite-plugin-svg-spritemap';
 import { webfontDownload } from 'vite-plugin-webfont-dl';
 
 // https://vitejs.dev/config/
@@ -41,7 +42,6 @@ export default defineConfig(({ mode }) => {
       }),
       webfontDownload(
         [
-          // biome-ignore lint/nursery/noSecrets: <explanation>
           'https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap',
         ],
         {
@@ -54,10 +54,24 @@ export default defineConfig(({ mode }) => {
         },
       ),
       imagetools({
+        defaultDirectives: () => {
+          return new URLSearchParams({
+            format: 'avif;webp;jpg',
+            quality: '75',
+          });
+        },
         cache: {
           enabled: true,
           dir: './node_modules/.cache/imagetools',
         },
+      }),
+      svgSpritemap({
+        pattern: 'src/assets/icons/',
+        prefix: 'icon-',
+        filename: 'spritemap.svg',
+        currentColor: false,
+        svgo: true,
+        emit: false,
       }),
       vitePluginFaviconsInject('./src/assets/favicons/logo.svg', {
         path: '/',
