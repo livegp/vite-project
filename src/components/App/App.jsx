@@ -5,11 +5,9 @@ import { Head } from '../Head.jsx';
 import { Icon } from '../Icon/Icon.jsx';
 import { Image } from '../Image.jsx';
 import {
-  // AnimatedLogo,
   Button,
   Card,
   GlobalStyles,
-  // Logo,
   StyledLink,
   Text,
   Title,
