@@ -66,8 +66,8 @@ export default defineConfig(({ mode }) => {
         },
       }),
       svgSpritemap({
-        pattern: 'src/assets/icons/',
-        prefix: 'icon-',
+        pattern: 'src/assets/icons/*.svg',
+        prefix: '',
         filename: 'spritemap.svg',
         currentColor: false,
         svgo: true,

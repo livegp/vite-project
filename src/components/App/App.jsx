@@ -1,16 +1,15 @@
 import { Global } from '@emotion/react';
 import { useState } from 'react';
-import reactLogo from '/src/assets/icons/react.svg';
-import viteLogo from '/src/assets/icons/vite.svg';
 import { img, sources } from '/src/assets/img/vite.png?as=picture&w=400';
 import { Head } from '../Head.jsx';
+import { Icon } from '../Icon/Icon.jsx';
 import { Image } from '../Image.jsx';
 import {
-  AnimatedLogo,
+  // AnimatedLogo,
   Button,
   Card,
   GlobalStyles,
-  Logo,
+  // Logo,
   StyledLink,
   Text,
   Title,
@@ -29,10 +28,10 @@ export function App() {
       <Head />
       <div>
         <StyledLink href='https://vitejs.dev' target='_blank' rel='noreferrer'>
-          <Logo src={viteLogo} alt='Vite logo' />
+          <Icon name='vite' />
         </StyledLink>
         <StyledLink href='https://react.dev' target='_blank' rel='noreferrer'>
-          <AnimatedLogo src={reactLogo} alt='React logo' />
+          <Icon name='react' animated={true} />
         </StyledLink>
       </div>
       <Title>Vite + React + Bun</Title>

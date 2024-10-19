@@ -1,36 +1,8 @@
-import { css, keyframes } from '@emotion/react';
+import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 
-export const Logo = styled.img`
-  height: 6em;
-  width: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-  &:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
-  }
-`;
-
-export const ReactLogo = styled(Logo)`
-  &:hover {
-    filter: drop-shadow(0 0 2em #61dafbaa);
-  }
-`;
-
 export const StyledLink = styled.a`
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-  &:hover {
-    color: #535bf2;
-  }
 
-  @media (prefers-color-scheme: light) {
-  &:hover {
-    color: #747bff;
-  }
-}
 `;
 
 export const Title = styled.h1`
@@ -59,21 +31,6 @@ export const Button = styled.button`
   @media (prefers-color-scheme: light) {
     background-color: #f9f9f9;
 }
-`;
-
-const spin = keyframes`
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-`;
-
-export const AnimatedLogo = styled(ReactLogo)`
-  @media (prefers-reduced-motion: no-preference) {
-    animation: ${spin} infinite 20s linear;
-  }
 `;
 
 export const Card = styled.div`
