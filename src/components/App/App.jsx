@@ -3,10 +3,10 @@ import { useState } from 'react';
 import {
   img,
   sources,
-} from '/src/assets/img/vite.png?as=picture&w=100;300;500';
-import { Head } from '../Head.jsx';
+} from '/src/assets/img/vite.png?w=100;300;500&as=picture';
+import { Head } from '../Head/Head.jsx';
 import { Icon } from '../Icon/Icon.jsx';
-import { Image } from '../Image.jsx';
+import { Picture } from '../Picture/Picture.jsx';
 import {
   Button,
   Card,
@@ -45,7 +45,7 @@ export function App() {
         </p>
       </Card>
       <Text>Click on the Vite and React logos to learn more</Text>
-      <Image img={img} sources={sources} />
+      <Picture img={img} sources={sources} />
     </>
   );
 }

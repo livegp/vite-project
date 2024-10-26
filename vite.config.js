@@ -20,7 +20,7 @@ export default defineConfig(({ mode }) => {
     },
     base: env.VITE_BASE_URL || '/',
     server: {
-      port: mode === 'development' ? 3000 : 8080,
+      port: mode === 'development' ? 3001 : 8080,
     },
     build: {
       outDir: mode === 'production' ? 'dist' : 'build',

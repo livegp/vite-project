@@ -10,7 +10,7 @@ const spin = keyframes`
   }
 `;
 
-export const Logo = styled.svg`
+export const IconStyled = styled.svg`
   height: 6em;
   width: 6em;
   padding: 1.5em;

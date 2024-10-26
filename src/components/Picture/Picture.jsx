@@ -1,4 +1,4 @@
-export const Image = ({ img, sources }) => (
+export const Picture = ({ img, sources }) => (
   <picture>
     {Object.entries(sources).map(([format, srcSet]) => (
       <source key={format} srcSet={srcSet} type={`image/${format}`} />
