@@ -32,7 +32,7 @@ export function App() {
           <Icon name='vite' />
         </StyledLink>
         <StyledLink href='https://react.dev' target='_blank' rel='noreferrer'>
-          <Icon name='react' animated={true} />
+          <Icon name='react' animated={true} primary={true} />
         </StyledLink>
       </div>
       <Title>Vite + React + Bun</Title>
