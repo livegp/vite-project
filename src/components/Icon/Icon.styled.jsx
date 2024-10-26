@@ -17,15 +17,12 @@ export const Logo = styled.svg`
   will-change: filter;
   transition: filter 300ms;
   &:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
+    filter: ${props => (props.primary ? 'drop-shadow(0 0 2em #61dafbaa)' : 'drop-shadow(0 0 2em #646cffaa)')};
   }
 
   ${props =>
     props.animated &&
     css`
-      &:hover {
-        filter: drop-shadow(0 0 2em #61dafbaa);
-      }
       @media (prefers-reduced-motion: no-preference) {
         animation: ${spin} infinite 20s linear;
       }

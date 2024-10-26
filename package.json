@@ -1,9 +1,9 @@
 {
   "name": "vite-project",
+  "private": true,
   "version": "1.0.0",
   "type": "module",
   "homepage": "https://livegp.github.io/vite-project",
-  "private": true,
   "description": "",
   "keywords": [],
   "bugs": {
@@ -36,13 +36,12 @@
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
     "@swc/plugin-emotion": "^4.0.3",
-    "@types/react": "^18.3.11",
+    "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react-swc": "^3.7.1",
-    "globals": "^15.11.0",
-    "lefthook": "^1.7.22",
+    "lefthook": "^1.8.1",
     "unplugin-turbo-console": "^1.10.4",
-    "vite": "^5.4.9",
+    "vite": "^5.4.10",
     "vite-imagetools": "^7.0.4",
     "vite-plugin-biome": "^1.0.12",
     "vite-plugin-favicons-inject": "^2.2.0",

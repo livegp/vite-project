@@ -1,6 +1,9 @@
 import { Global } from '@emotion/react';
 import { useState } from 'react';
-import { img, sources } from '/src/assets/img/vite.png?as=picture&w=400';
+import {
+  img,
+  sources,
+} from '/src/assets/img/vite.png?as=picture&w=100;300;500';
 import { Head } from '../Head.jsx';
 import { Icon } from '../Icon/Icon.jsx';
 import { Image } from '../Image.jsx';

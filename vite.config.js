@@ -139,7 +139,7 @@ export default defineConfig(({ mode }) => {
           imageAlt: 'Vite Image',
         },
         facebook: {
-          appId: '100000506117116',
+          appId: 100000506117116,
         },
       }),
     ],
